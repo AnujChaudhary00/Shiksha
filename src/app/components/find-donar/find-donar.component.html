@@ -1,0 +1,18 @@
+<table class="table" id="TABLE">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Contact No</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let info of list1">
+        <td>{{info.name}}</td>
+        <td>{{info.gender}}</td>
+        <td>{{info.contactno}}</td>
+        <td>{{info.address}}</td>
+      </tr>
+    </tbody>
+  </table>

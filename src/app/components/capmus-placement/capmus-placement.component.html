@@ -1,0 +1,61 @@
+<div class="FORM">
+<form>
+
+    <table border="0">
+        <div id="row">
+        <tr>
+            <td>Name</td>
+            <td><input type="text"
+                name="nametxt" [(ngModel)]="var_name"  placeholder="Enter Your Name"  required ></td>
+        </tr>
+        </div>
+        <div id="row">
+        <tr>
+            <td>Gender</td>
+            <td>
+            <input  type="text"  name="gender" [(ngModel)]="var_gender" /></td>
+        </tr>
+        </div>
+        <div id="row">
+        <tr>
+            <td>Date Of Birth</td>
+            <td><input type="Date"  name="nametxt" [(ngModel)]="var_date"  placeholder="Enter Date"></td>
+        </tr>
+        </div>
+
+        <div id="row">
+            <tr>
+                <td>Email Id</td>
+                <td><input name="emailtxt" [(ngModel)]="var_email" type="text"  required></td>
+            </tr>
+        </div>
+
+        <div id="row">
+        <tr>
+            <td>Blood Group</td>
+            <td>
+                <select class="form-group" name="banchcb" [(ngModel)]="var_bloodgroup">
+                    <option *ngFor="let branch of branches"  [value]="branch" >{{branch}}</option>
+                </select>
+            </td>
+        </tr>
+        </div>
+        <div id="row">
+       
+        </div>
+        <div id="row">
+        <tr>
+            <td>Phone No.</td>
+            <td><input  id="Mydate" type="number"  name="Contact" [(ngModel)]="var_contact"  placeholder=" Enter your phone no." min="10"  max="10" /></td>
+        </tr>
+       
+        <tr>
+            <td>Address</td>
+            <td><textarea rows="2"  name="address" [(ngModel)]="var_address" ></textarea></td>
+        </tr>
+            <button class="btn btn-warning" (click)="register_clickHandler()" style="float: right;">Donate</button>
+        </div>
+    </table>
+
+</form>
+</div>
