@@ -1,0 +1,32 @@
+
+
+nav ul li:hover > ul
+{  
+      text-decoration: none;
+      transition: .5s;
+      color: brown;
+      display: block;
+      
+}
+
+nav ul ul li:hover a
+{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul ul
+{
+   list-style: none;
+   position: absolute;
+   text-align: left;
+   display: none;
+   background-color:rgb(5, 115, 122);
+}
+nav ul ul li a{
+   margin:20px 0px;
+   margin-right: 10px;
+   display: block;
+   color: rgba(228, 228, 228, 0.938);
+}
+

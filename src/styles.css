@@ -1,45 +1,11 @@
 
 .FORM
 {
-    position: absolute;
-    top: 110px;
-    left: 30%;
-}
-
-body
-{
-    background-image:url("https://images.thequint.com/thequint%2F2020-06%2F5d26b745-6d9a-4ee3-a751-f2d8d9ce34bb%2Fhero_image_3.jpg?auto=format%2Ccompress&fmt=webp&w=480&dpr=2.6");
+    top: 50px;
+    margin: 80px 50px;
 }
 
 
-table {
-    border-collapse:separate; 
-    border-spacing: 0 .5em;
-    text-align: justify;
-    background-color: rgb(168, 241, 247);
-    padding: 2em;
-    color: rgb(14, 146, 179);
-  }
-  input
-  {
-      border:.5px solid #11B7B9;
-  }
-  textarea
-  {
-  border:.5px solid #11B7B9;	
-  }
-  
-  input:hover
-  {
-      transform: scale(1.09)
-  }
-  td
-  {
-      width: 300px;
-      height: 25px;
-  }
-
-  
 .carousel {
     margin-bottom: 4rem;
   }

@@ -1,61 +1,48 @@
 <div class="FORM">
-<form>
 
-    <table border="0">
-        <div id="row">
-        <tr>
-            <td>Name</td>
-            <td><input type="text"
-                name="nametxt" [(ngModel)]="var_name"  placeholder="Enter Your Name"  required ></td>
-        </tr>
-        </div>
-        <div id="row">
-        <tr>
-            <td>Gender</td>
-            <td>
-            <input  type="text"  name="gender" [(ngModel)]="var_gender" /></td>
-        </tr>
-        </div>
-        <div id="row">
-        <tr>
-            <td>Date Of Birth</td>
-            <td><input type="Date"  name="nametxt" [(ngModel)]="var_date"  placeholder="Enter Date"></td>
-        </tr>
-        </div>
+<form action="/action_page.php">
+    <div class="form-group">
+      <label for="Name">Name:</label>
+      <input class="form-control" type="text"
+      name="nametxt" [(ngModel)]="var_name"  placeholder="Enter Your Name"  required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <input   class="form-control" type="text"  name="gender" [(ngModel)]="var_gender" />
+    </div>
+    <div class="form-group">
+        <label for="date">Date of Birth:</label>
+        <input  class="form-control" type="Date"  name="nametxt" [(ngModel)]="var_date"  placeholder="Enter Date">
+    </div>
+    <div class="form-group">
+        <label for="email">Email::</label>
+        <input type="email" class="form-control" [(ngModel)]="var_email" required>
+    </div>
 
-        <div id="row">
-            <tr>
-                <td>Email Id</td>
-                <td><input name="emailtxt" [(ngModel)]="var_email" type="text"  required></td>
-            </tr>
-        </div>
+    <div>
+        <label for="select">Blood Group:</label>
+        <select class="form-group" name="banchcb" [(ngModel)]="var_bloodgroup">
+            <option *ngFor="let branch of branches"  [value]="branch" >{{branch}}</option>
+        </select>
+    </div>
 
-        <div id="row">
-        <tr>
-            <td>Blood Group</td>
-            <td>
-                <select class="form-group" name="banchcb" [(ngModel)]="var_bloodgroup">
-                    <option *ngFor="let branch of branches"  [value]="branch" >{{branch}}</option>
-                </select>
-            </td>
-        </tr>
-        </div>
-        <div id="row">
-       
-        </div>
-        <div id="row">
-        <tr>
-            <td>Phone No.</td>
-            <td><input  id="Mydate" type="number"  name="Contact" [(ngModel)]="var_contact"  placeholder=" Enter your phone no." min="10"  max="10" /></td>
-        </tr>
-       
-        <tr>
-            <td>Address</td>
-            <td><textarea rows="2"  name="address" [(ngModel)]="var_address" ></textarea></td>
-        </tr>
-            <button class="btn btn-warning" (click)="register_clickHandler()" style="float: right;">Donate</button>
-        </div>
-    </table>
+    <div class="form-group">
+        <label for="number">Contact No:</label>
+        <input  class="form-control" type="text"  name="Contact" [(ngModel)]="var_contact"  placeholder=" Enter your phone no." min="10"  max="10" />
+    </div>
 
-</form>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Address:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"   name="address" [(ngModel)]="var_address"></textarea>
+      </div>
+
+    <div class="form-group form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox"> Remember me
+      </label>
+    </div>
+    <button type="submit"  class="btn btn-success" (click)="register_clickHandler()">Submit</button>
+  </form>
+
+
 </div>

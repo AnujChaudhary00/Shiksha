@@ -12,6 +12,10 @@ import {HttpClientModule} from '@angular/common/http';
 import { RouterModule} from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { FindDonarComponent } from './components/find-donar/find-donar.component';
+import { CrouselComponent } from './components/crousel/crousel.component';
+import { MainBodyComponent } from './components/main-body/main-body.component';
+import { MiddlePartComponent } from './components/middle-part/middle-part.component';
+import { LastPartComponent } from './components/last-part/last-part.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { FindDonarComponent } from './components/find-donar/find-donar.component
     CapmusPlacementComponent,
     CampusReportComponent,
     HomeComponent,
-    FindDonarComponent
+    FindDonarComponent,
+    CrouselComponent,
+    MainBodyComponent,
+    MiddlePartComponent,
+    LastPartComponent
   ],
   imports: [
     BrowserModule,
@@ -39,12 +47,13 @@ import { FindDonarComponent } from './components/find-donar/find-donar.component
       },
       {
         path:'home',
-        component:HomeComponent
+        component:MainBodyComponent
       },
       {
         path:'Donar',
         component:FindDonarComponent
       }
+     
    ])
   ],
   providers: [],
