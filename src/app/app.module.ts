@@ -16,6 +16,7 @@ import { CrouselComponent } from './components/crousel/crousel.component';
 import { MainBodyComponent } from './components/main-body/main-body.component';
 import { MiddlePartComponent } from './components/middle-part/middle-part.component';
 import { LastPartComponent } from './components/last-part/last-part.component';
+import { AdmissionComponent } from './components/admission/admission.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LastPartComponent } from './components/last-part/last-part.component';
     CrouselComponent,
     MainBodyComponent,
     MiddlePartComponent,
-    LastPartComponent
+    LastPartComponent,
+    AdmissionComponent
   ],
   imports: [
     BrowserModule,
@@ -52,8 +54,15 @@ import { LastPartComponent } from './components/last-part/last-part.component';
       {
         path:'Donar',
         component:FindDonarComponent
+      },
+      {
+        path:'Login',
+        component: CampusReportComponent
+      },
+      {
+        path:'Admission',
+        component:AdmissionComponent
       }
-     
    ])
   ],
   providers: [],
